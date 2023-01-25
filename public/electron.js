@@ -1,4 +1,6 @@
-const { app, BrowserWindow } = require ("electron");
+const { app, BrowserWindow } = require ('electron');
+
+if (require('electron-squirrel-startup')) app.quit();
 
 function createWindow() {
 
@@ -9,6 +11,7 @@ function createWindow() {
         resizable: false,
         minimizable: false,
         frame: false,
+
         
     });
     win.loadURL("http://localhost:5173");
