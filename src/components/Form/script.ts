@@ -1,6 +1,6 @@
 const LOGIN = "s.hammer";
 const PASSWORD = "123";
-const URL = "http://localhost:5173/";
+const URL = "https://orbital.herokuapp.com/";
 
 var audio = new Audio('/audio.mp3');
 audio.volume = 0.8;
