@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bomboniere.xml>
+    <playlist playlistId="2069842" dia="27" mes="11" ano="2022">
+        <item nome="1tela-1920x1080px.mp4" duration="0" />
+        <item nome="MMs 1920x1080.mp4" duration="0" />
+    </playlist>
+    <playlist playlistId="2072106" dia="28" mes="11" ano="2022">
+        <item nome="1tela-1920x1080px.mp4" duration="0" />
+        <item nome="MMs 1920x1080.mp4" duration="0" />
+    </playlist>
+    <playlist playlistId="2073160" dia="29" mes="11" ano="2022">
+        <item nome="1tela-1920x1080px.mp4" duration="0" />
+        <item nome="MMs 1920x1080.mp4" duration="0" />
+    </playlist>
+    <playlist playlistId="2074214" dia="30" mes="11" ano="2022">
+        <item nome="1tela-1920x1080px.mp4" duration="0" />
+        <item nome="MMs 1920x1080.mp4" duration="0" />
+    </playlist>
+</Bomboniere.xml>
