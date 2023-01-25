@@ -32,10 +32,11 @@
     }
   },
   "scripts": {
-    "dev": "node server.js",
+    "dev": "react-scripts start",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "start": "electron-forge start",
+    "forge": "electron-forge start",
+    "start": "node server.js",
     "electron": "electron .",
     "package": "electron-forge package",
     "make": "electron-forge make",
