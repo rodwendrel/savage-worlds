@@ -32,7 +32,7 @@
     }
   },
   "scripts": {
-    "dev": "react-scripts start",
+    "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
     "forge": "electron-forge start",
