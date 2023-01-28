@@ -33,11 +33,12 @@ export const DayTwo = () => {
 
 export const DayThree = () => {
     return <>
-        <Card2
-            title='Dia 3'
+        <Card2 title='Dia 3'
 
-            text='Os tais mercenários chegaram. Estão em quatro:
-        ' />
+            text='Os tais mercenários chegaram. Estão em quatro:' 
+            
+            
+            />
     </>
 
 }

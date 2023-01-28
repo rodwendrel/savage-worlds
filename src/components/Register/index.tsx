@@ -2,10 +2,16 @@ import * as S from './style'
 import { useState } from 'react'
 import { Card } from '../Card'
 import { DayOne, DayThree, DayTwo } from '../../data/Days'
+import styled from 'styled-components'
 
 
 export const Register = () => {
     const [active, setActive] = useState("")
+    const [color, setColor] = useState("color");
+
+   /* const text = styled.span`
+        color: ${color};
+    ` */
 
     return <S.Register>
         <div className="left-content">

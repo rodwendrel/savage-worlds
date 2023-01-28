@@ -48,6 +48,8 @@ export const Register = styled.div`
 
     button:hover {
         font-weight: 700;
+        border-bottom: solid 1px #0eeaff;
+
     }
 
 `

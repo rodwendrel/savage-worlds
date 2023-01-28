@@ -5,7 +5,7 @@ export type cardContent = {
     text: string,
 }
 
-export const Card = ({title, text}: cardContent) => {
+export const Card = ({ title, text }: cardContent) => {
     return <S.Card>
         <h1>{title}</h1>
 
@@ -13,7 +13,7 @@ export const Card = ({title, text}: cardContent) => {
     </S.Card>
 }
 
-export const Card2 = ({title, text}: cardContent) => {
+export const Card2 = ({ title, text }: cardContent) => {
     return <S.Card>
         <h1>{title}</h1>
 
@@ -25,5 +25,12 @@ export const Card2 = ({title, text}: cardContent) => {
             <li>Cyrus Edmond</li>
             <li>Khristoff</li>
         </ul>
+
+        <br />
+        <p>
+            Realmente não sei se eles são capazes. Não parecem ser muita coisa.
+            Mas não estou sendo pago para julgar ninguém. Só espero não precisar
+            fazer nada a respeito disso.
+        </p>
     </S.Card>
 }
