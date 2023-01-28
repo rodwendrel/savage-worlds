@@ -18,6 +18,10 @@ export const Form = styled.div`
     justify-content: center;
     flex-direction: column;
 
+    .error {
+        background-image: linear-gradient(red);
+    }
+
     input {
         display: flex;
         align-items: center;

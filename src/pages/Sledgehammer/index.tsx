@@ -4,7 +4,6 @@ import Nav from '../../components/Nav';
 import { Register } from '../../components/Register';
 
 
-
 const Hammer = () => {
 
     return <S.Hammer>

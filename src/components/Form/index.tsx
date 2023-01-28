@@ -1,9 +1,12 @@
 import * as S from './styles';
 import { useState } from 'react';
 
+
+
 const URL = "https://orbital.herokuapp.com/";
 var audio = new Audio('/audio.mp3');
 audio.volume = 0.8;
+
 
 const Content = () => {
 
@@ -15,6 +18,8 @@ const Content = () => {
     function validate() {
         let user = login.user;
         let password = login.password;
+        let userInput = document.getElementById('user') as HTMLInputElement;
+        let passwordInput = document.getElementById('password') as HTMLInputElement;
 
         if (user == "s.hammer" && password == "123") {
 
@@ -22,11 +27,15 @@ const Content = () => {
             window.location.href = URL + "sledge";
         } else {
             audio.play();
-            window.alert("Usuário Inválido")
+
+            userInput.value = "";
+            passwordInput.value = "";
+            setLogin({ ...login, user: "", password: "" })
         }
     }
-
     return <S.Form>
+
+        
 
         <h1> Relatório de Missões </h1>
 
@@ -61,7 +70,7 @@ const Content = () => {
                 disabled={!login.password || !login.user}
                 onClick={validate}
             />
-                
+
 
         </form>
 
