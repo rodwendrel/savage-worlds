@@ -25,7 +25,7 @@ export const Form = styled.div`
         
         width: auto;
         margin: 0 auto;
-        margin-top: 20px;
+        margin-top: 15px;
         font-weight: bold;
     }
 
@@ -46,6 +46,15 @@ export const Form = styled.div`
         width: 75px;
         height: 25px;
         cursor: pointer;
+        margin-top: 15px;
+        text-align: center;
     }
+
+   form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    } 
 
 `

@@ -1,34 +1,69 @@
 import * as S from './styles';
-import * as script from './script';
+import { useState } from 'react';
+
+const URL = "https://orbital.herokuapp.com/";
+var audio = new Audio('/audio.mp3');
+audio.volume = 0.8;
 
 const Content = () => {
+
+    const [login, setLogin] = useState({
+        user: "",
+        password: "",
+    });
+
+    function validate() {
+        let user = login.user;
+        let password = login.password;
+
+        if (user == "s.hammer" && password == "123") {
+
+            console.log("ae caralho")
+            window.location.href = URL + "sledge";
+        } else {
+            audio.play();
+            window.alert("Usuário Inválido")
+        }
+    }
+
     return <S.Form>
 
-            <h1> Relatório de Missões </h1>
+        <h1> Relatório de Missões </h1>
 
-            <form>
-                <input
-                    className='user text'
-                    type="text"
-                    placeholder='usuário'
-                    id='user'
-                />
+        <form>
+            <input
+                className='user text'
+                type="text"
+                placeholder='usuário'
+                id='user'
+                onChange={(event: any) => {
+                    const value = event.target.value;
+                    setLogin({ ...login, user: value })
+                }
+                }
+            />
 
-                <input
-                    className='password text'
-                    type="password"
-                    placeholder='senha'
-                    id='password'
-                />
+            <input
+                className='password text'
+                type="password"
+                placeholder='senha'
+                id='password'
+                onChange={(event: any) => {
+                    const value = event.target.value;
+                    setLogin({ ...login, password: value })
+                }
+                }
+            />
 
-                <input
-                    className='enter'
-                    type="button"
-                    value="entrar"
-                    onClick={script.login}
-                />
+            <input
+                className='enter'
+                value="entrar"
+                disabled={!login.password || !login.user}
+                onClick={validate}
+            />
+                
 
-            </form>
+        </form>
 
     </S.Form>
 }
