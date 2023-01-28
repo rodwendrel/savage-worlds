@@ -10,13 +10,20 @@ export const Card = styled.div`
 
     color: #acf0f2;
     padding: 20px;
-    width: 30rem;
+
 
     font-size: 1.5rem;
+
+    line-height: 45px;
 
     ul {
         font-size: 1.2rem;
         margin-left: 3rem;
         list-style: square;
+
+        align-items: flex-start;
+        line-height: 20px;
+
     }
+   
 `

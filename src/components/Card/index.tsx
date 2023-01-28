@@ -2,7 +2,7 @@ import * as S from './styles';
 
 export type cardContent = {
     title: string,
-    text: string
+    text: string,
 }
 
 export const Card = ({title, text}: cardContent) => {
