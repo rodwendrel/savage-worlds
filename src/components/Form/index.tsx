@@ -1,8 +1,6 @@
 import * as S from './styles';
 import { useState } from 'react';
 
-
-
 const URL = "https://orbital.herokuapp.com/";
 var audio = new Audio('/audio.mp3');
 audio.volume = 0.8;
@@ -21,9 +19,7 @@ const Content = () => {
         let userInput = document.getElementById('user') as HTMLInputElement;
         let passwordInput = document.getElementById('password') as HTMLInputElement;
 
-        if (user == "s.hammer" && password == "123") {
-
-            console.log("ae caralho")
+        if (user == "s.hammer" && password == "TjPhzgxe3L0") {
             window.location.href = URL + "sledge";
         } else {
             audio.play();
